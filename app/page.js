@@ -124,7 +124,7 @@ export default function Home() {
               </h1>
               <p className="hero-sub">Vytal Future combines wearable data, bloodwork, and personalized protocols into one unified score — so busy professionals can perform at their best, every day.</p>
               <div className="hero-btns">
-                <button className="btn btn-primary" onClick={() => scrollTo('pricing')}>Start Your Journey →</button>
+                <button className="btn btn-primary" onClick={() => window.location.href = '/signup'}>Start Your Journey →</button>
                 <button className="btn btn-outline" onClick={() => scrollTo('how')}>See How It Works</button>
               </div>
               <div className="hero-stats">
@@ -500,7 +500,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <button className={`btn ${plan.featured ? 'btn-primary' : 'btn-outline'} pricing-btn`} onClick={() => scrollTo('cta')}>
+                <button className={`btn ${plan.featured ? 'btn-primary' : 'btn-outline'} pricing-btn`} onClick={() => window.location.href = '/signup'}>
                   {plan.featured ? 'Get Started →' : 'Get Started'}
                 </button>
               </div>
@@ -517,7 +517,7 @@ export default function Home() {
             <h2 className="cta-heading">Ready to know what<br/>your body is telling you?</h2>
             <p className="cta-sub">Join Vytal Future and get your personalized health protocol, Vytal Score, and weekly reports — starting this week.</p>
             <div className="cta-btns">
-              <button className="btn btn-primary" style={{fontSize:'15px',padding:'15px 36px'}}>Start Your Journey →</button>
+              <button className="btn btn-primary" style={{fontSize:'15px',padding:'15px 36px'}} onClick={() => window.location.href = '/signup'}>Start Your Journey →</button>
               <button className="btn btn-outline" onClick={openLogin}>Already a member? Login</button>
             </div>
             <p className="cta-disclaimer">Cancel anytime · Blood work kit shipped to you · Wearable not required to start</p>
