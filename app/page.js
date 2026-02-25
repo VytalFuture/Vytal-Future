@@ -15,6 +15,30 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+          entry.target.querySelectorAll('.how-card, .feature-card, .supp-card, .testi-card, .pricing-card').forEach((el, i) => {
+            el.style.transitionDelay = `${i * 0.08}s`
+            el.style.opacity = '1'
+            el.style.transform = 'translateY(0)'
+          })
+        }
+      })
+    }, { threshold: 0.08 })
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.querySelectorAll('.how-card, .feature-card, .supp-card, .testi-card, .pricing-card').forEach(child => {
+        child.style.opacity = '0'
+        child.style.transform = 'translateY(24px)'
+        child.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
+      })
+      observer.observe(el)
+    })
+  }, [])
+
   const scrollTo = (id) => {
     const el = document.getElementById(id)
     if (el) {
