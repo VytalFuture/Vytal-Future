@@ -68,7 +68,11 @@ export default function Home() {
         <div className="container">
           <div className="nav-inner">
             <a className="nav-logo" href="#hero" onClick={() => scrollTo('hero')}>
-              <img src="/logo.png" alt="Vytal Future" style={{height: '40px', width: 'auto'}} />
+              <svg className="nav-logo-icon" viewBox="0 0 36 36" fill="none">
+                <path d="M6 10 L18 26 L30 10" stroke="url(#nl1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 10 L18 20 L24 10" stroke="url(#nl1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
+                <defs><linearGradient id="nl1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
+              </svg>
               <span className="nav-logo-text">Vytal Future</span>
             </a>
             <div className="nav-links">
@@ -527,7 +531,11 @@ export default function Home() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="footer-logo">
-                <img src="/logo.png" alt="Vytal Future" style={{height: '28px', width: 'auto'}} />
+                <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                  <path d="M6 10 L18 26 L30 10" stroke="url(#fl1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 10 L18 20 L24 10" stroke="url(#fl1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
+                  <defs><linearGradient id="fl1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
+                </svg>
                 <span className="footer-logo-text">Vytal Future</span>
               </div>
               <p className="footer-tagline">Personalized health optimization for people who want to perform at their best — every day.</p>
@@ -579,7 +587,11 @@ export default function Home() {
         <div className="modal">
           <div className="modal-close" onClick={closeLogin}>✕</div>
           <div className="modal-logo">
-            <img src="/logo.png" alt="Vytal Future" style={{height: '22px', width: 'auto'}} />
+            <svg width="22" height="22" viewBox="0 0 36 36" fill="none">
+              <path d="M6 10 L18 26 L30 10" stroke="url(#ml1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M12 10 L18 20 L24 10" stroke="url(#ml1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
+              <defs><linearGradient id="ml1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
+            </svg>
             <span className="modal-logo-text">Vytal Future</span>
           </div>
           <div className="modal-title">Welcome back.</div>
