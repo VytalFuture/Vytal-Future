@@ -17,6 +17,9 @@ export const metadata = {
     description: 'Personalized health optimization for busy professionals.',
   },
   robots: 'index, follow',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -25,6 +28,11 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" 
+          rel="stylesheet" 
+        />
       </head>
       <body>
         {children}
