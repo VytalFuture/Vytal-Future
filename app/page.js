@@ -68,11 +68,7 @@ export default function Home() {
         <div className="container">
           <div className="nav-inner">
             <a className="nav-logo" href="#hero" onClick={() => scrollTo('hero')}>
-              <svg className="nav-logo-icon" viewBox="0 0 36 36" fill="none">
-                <path d="M6 10 L18 26 L30 10" stroke="url(#nl1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 10 L18 20 L24 10" stroke="url(#nl1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
-                <defs><linearGradient id="nl1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
-              </svg>
+              <img src="/logo.png" alt="Vytal Future" style={{height: '40px', width: 'auto'}} />
               <span className="nav-logo-text">Vytal Future</span>
             </a>
             <div className="nav-links">
@@ -217,7 +213,7 @@ export default function Home() {
           </div>
           <div className="how-grid reveal">
             {[
-              { num: '01', icon: '⌚', title: 'Connect Your Wearable', desc: 'Link your WHOOP, Apple Watch, Garmin, Oura, or 150+ other devices. We pull your real-time health data automatically — no manual logging.', tag: 'Powered by Terra API' },
+              { num: '01', icon: '⌚', title: 'Connect Your Wearable', desc: 'Link your WHOOP, Apple Watch, Garmin, Oura, or 150+ other devices. We pull your real-time health data automatically — no manual logging.', tag: 'Auto-sync' },
               { num: '02', icon: '🧬', title: 'Establish Your Baseline', desc: 'We collect your bloodwork every 6 months — biomarkers, vitamins, hormones, inflammation. This anchors everything else and lets us track real, cellular-level change.', tag: 'Blood draw included' },
               { num: '03', icon: '📊', title: 'Get Your Vytal Score', desc: 'All your data rolls up into one unified metric — your Vytal Score. Updated weekly, it reflects your physical, mental, nutritional, and biomarker health in a single, trackable number.', tag: '4 pillars · 1 score' },
               { num: '04', icon: '🎯', title: 'Follow Your Protocol', desc: 'We build a personalized protocol around your data — sleep targets, movement goals, nutrition guidelines, supplements. Three quick weekly check-ins keep us calibrated to your week.', tag: '30-second check-ins' },
@@ -452,7 +448,7 @@ export default function Home() {
           </div>
           <div className="pricing-grid reveal">
             {[
-              { tier: 'Starter', name: 'Essential', desc: 'Everything you need to get started with tracking and improving your health baseline.', amount: '$99', featured: false, features: [
+              { tier: 'Starter', name: 'Essential', desc: 'Everything you need to get started with tracking and improving your health baseline.', amount: '$50', featured: false, features: [
                 { yes: true, text: 'Vytal Score tracking' },
                 { yes: true, text: 'Wearable data sync' },
                 { yes: true, text: 'Weekly check-ins' },
@@ -462,7 +458,7 @@ export default function Home() {
                 { yes: false, text: 'Accountability outreach' },
                 { yes: false, text: '3-Month deep review' },
               ]},
-              { tier: 'Pro', name: 'Performance', desc: 'The full Vytal Future experience — every feature, full accountability, and bi-annual blood work included.', amount: '$199', featured: true, features: [
+              { tier: 'Pro', name: 'Performance', desc: 'The full Vytal Future experience — every feature, full accountability, and bi-annual blood work included.', amount: '$150', featured: true, features: [
                 { yes: true, text: 'Everything in Essential' },
                 { yes: true, text: 'Blood work every 6 months' },
                 { yes: true, text: 'Personalized protocol' },
@@ -472,7 +468,7 @@ export default function Home() {
                 { yes: true, text: 'Community leaderboard' },
                 { yes: true, text: 'Priority support' },
               ]},
-              { tier: 'Elite', name: 'Athlete', desc: 'For serious athletes and performance-driven individuals who want the highest level of optimization.', amount: '$349', featured: false, features: [
+              { tier: 'Elite', name: 'Athlete', desc: 'For serious athletes and performance-driven individuals who want the highest level of optimization.', amount: '$250', featured: false, features: [
                 { yes: true, text: 'Everything in Performance' },
                 { yes: true, text: 'Quarterly blood draws' },
                 { yes: true, text: 'Monthly 1:1 coaching call' },
@@ -531,11 +527,7 @@ export default function Home() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="footer-logo">
-                <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
-                  <path d="M6 10 L18 26 L30 10" stroke="url(#fl1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 10 L18 20 L24 10" stroke="url(#fl1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
-                  <defs><linearGradient id="fl1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
-                </svg>
+                <img src="/logo.png" alt="Vytal Future" style={{height: '28px', width: 'auto'}} />
                 <span className="footer-logo-text">Vytal Future</span>
               </div>
               <p className="footer-tagline">Personalized health optimization for people who want to perform at their best — every day.</p>
@@ -587,11 +579,7 @@ export default function Home() {
         <div className="modal">
           <div className="modal-close" onClick={closeLogin}>✕</div>
           <div className="modal-logo">
-            <svg width="22" height="22" viewBox="0 0 36 36" fill="none">
-              <path d="M6 10 L18 26 L30 10" stroke="url(#ml1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M12 10 L18 20 L24 10" stroke="url(#ml1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
-              <defs><linearGradient id="ml1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#00e5c8"/><stop offset="100%" stopColor="#3b82f6"/></linearGradient></defs>
-            </svg>
+            <img src="/logo.png" alt="Vytal Future" style={{height: '22px', width: 'auto'}} />
             <span className="modal-logo-text">Vytal Future</span>
           </div>
           <div className="modal-title">Welcome back.</div>
